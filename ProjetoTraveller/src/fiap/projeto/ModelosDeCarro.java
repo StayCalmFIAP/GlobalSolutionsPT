@@ -11,6 +11,18 @@ public class ModelosDeCarro {
 	private String linkFoto;
 	private String tipoCambio;
 	public ModelosDeCarro () {}
+	public ModelosDeCarro (String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,int ano,String linkFoto,String tipoCambio) {
+		this.nomeCarro = nomeCarro;
+		this.marca = marca;
+		this.modeloCarroceria = modeloCarroceria;
+		this.cor = cor;
+		this.qtPortas = qtPortas;
+		this.ano = ano;
+		this.linkFoto = linkFoto;
+		this.tipoCambio = tipoCambio;
+		
+		
+	}
 	
 	public String getNomeCarro() {
 		return nomeCarro;
