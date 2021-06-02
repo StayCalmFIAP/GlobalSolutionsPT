@@ -1,5 +1,7 @@
 package fiap.projeto;
 
+import java.util.ArrayList;
+
 public class Hospedagem extends EstabelecimentoComercial {
 	
 	private String nomeHospedagem;
@@ -9,6 +11,7 @@ public class Hospedagem extends EstabelecimentoComercial {
 	private boolean temWifi;
 	private boolean temPiscina;
 	private boolean podePet;
+	ArrayList<Quarto> listaQuartos = new ArrayList<Quarto>();
 	public Hospedagem () {}
 	
 	public String getNomeHospedagem() {
@@ -59,5 +62,15 @@ public class Hospedagem extends EstabelecimentoComercial {
 	public void setPodePet(boolean podePet) {
 		this.podePet = podePet;
 	}
+	 //(int coidgo,String linkImg,String dscr,double preco,String categoria)
+	public void novoQuarto (int coidgo,String linkImg,String dscr,double preco,String categoria) {
+		Quarto qrt = new Quarto(coidgo,linkImg,dscr,preco,categoria);
+		listaQuartos.add(qrt);
+	}
+	
+	
+	
+	
+	
 	
 }

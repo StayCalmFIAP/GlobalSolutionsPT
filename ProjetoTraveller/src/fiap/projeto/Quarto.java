@@ -8,7 +8,14 @@ public class Quarto{
 	private double precoQuarto;
 	private String categoriaQuarto;
 	public Quarto () {}
+	public Quarto (int coidgo,String linkImg,String dscr,double preco,String categoria) {
+	this.codigoQuarto = coidgo;
+	this.linkImgQuarto = linkImg;
+	this.descricaoCategoria = dscr;
+	this.precoQuarto = preco;
+	this.categoriaQuarto = categoria;
 	
+	}
 	public int getCodigoQuarto() {
 		return codigoQuarto;
 	}
@@ -43,5 +50,7 @@ public class Quarto{
 	public void setCategoriaQuarto(String categoriaQuarto) {
 		this.categoriaQuarto = categoriaQuarto;
 	}
+	
+	
 
 }
