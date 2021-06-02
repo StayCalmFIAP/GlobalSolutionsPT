@@ -1,13 +1,14 @@
 package fiap.projeto;
 
 public class EstabelecimentoComercial {
-	public EstabelecimentoComercial () {}
+	
 	private String localizacao;
 	private String linkCmChegar;
-	private int notaAvaliacao;
+	private double notaAvaliacao;
 	private String linkContato;
-	private int telefoneContato;
+	private long telefoneContato;
 	private String breveDescricao;
+	public EstabelecimentoComercial () {}
 	
 	public String getLocalizacao() {
 		return localizacao;
@@ -23,10 +24,10 @@ public class EstabelecimentoComercial {
 		this.linkCmChegar = linkCmChegar;
 	}
 	
-	public int getNotaAvaliacao() {
+	public double getNotaAvaliacao() {
 		return notaAvaliacao;
 	}
-	public void setNotaAvaliacao(int notaAvaliacao) {
+	public void setNotaAvaliacao(double notaAvaliacao) {
 		this.notaAvaliacao = notaAvaliacao;
 	}
 	
@@ -37,10 +38,10 @@ public class EstabelecimentoComercial {
 		this.linkContato = linkContato;
 	}
 	
-	public int getTelefoneContato() {
+	public long getTelefoneContato() {
 		return telefoneContato;
 	}
-	public void setTelefoneContato(int telefoneContato) {
+	public void setTelefoneContato(long telefoneContato) {
 		this.telefoneContato = telefoneContato;
 	}
 	
