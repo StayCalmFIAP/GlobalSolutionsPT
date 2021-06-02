@@ -7,17 +7,15 @@ public class ModelosDeCarro {
 	private String modeloCarroceria;
 	private String cor;
 	private int qtPortas;
-	private int ano;
 	private String linkFoto;
 	private String tipoCambio;
 	public ModelosDeCarro () {}
-	public ModelosDeCarro (String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,int ano,String linkFoto,String tipoCambio) {
+	public ModelosDeCarro (String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,String linkFoto,String tipoCambio) {
 		this.nomeCarro = nomeCarro;
 		this.marca = marca;
 		this.modeloCarroceria = modeloCarroceria;
 		this.cor = cor;
 		this.qtPortas = qtPortas;
-		this.ano = ano;
 		this.linkFoto = linkFoto;
 		this.tipoCambio = tipoCambio;
 		
@@ -59,12 +57,6 @@ public class ModelosDeCarro {
 		this.qtPortas = qtPortas;
 	}
 	
-	public int getAno() {
-		return ano;
-	}
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
 	
 	public String getLinkFoto() {
 		return linkFoto;
