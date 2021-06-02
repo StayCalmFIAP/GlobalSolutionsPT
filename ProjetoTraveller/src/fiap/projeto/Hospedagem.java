@@ -73,4 +73,6 @@ public class Hospedagem extends EstabelecimentoComercial {
 	
 	
 	
+	
+	
 }
