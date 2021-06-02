@@ -36,15 +36,25 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 		
 		
 	}
-	
+	// metodo que printa modelos disponivies para alguel
 	public void modelosDisponiveis() {
 		System.out.println("Modelos disponiveis:  ");
+		System.out.println("-----------------------------");
 		for (int i= 0 ; i < listaCarros.size(); i++) {
 			ModelosDeCarro car = listaCarros.get(i);
-			System.out.println(car.getNomeCarro());
+			System.out.println("Carro: " + car.getNomeCarro());
+			System.out.println("Marca "+car.getMarca());
+			System.out.println("Carroceria " + car.getModeloCarroceria());
+			System.out.println("Cor " + car.getCor());
+			System.out.println(car.getQtPortas()+ "portas");
+			System.out.println("Foto "+ car.getLinkFoto());
+			System.out.println("Câmbio "+car.getTipoCambio());
+			System.out.println("-----------------------------");
+			
+			
 		}
 	}
-	
+	// metodo que printa informacoes
 	public void printInformacoes() {
 		System.out.println("Nome da locadora:" + this.nomeLocadora);
 		System.out.println("Localização: "+this.getLocalizacao());
