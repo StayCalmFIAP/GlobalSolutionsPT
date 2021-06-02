@@ -6,7 +6,6 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 	
 	private String nomeLocadora;
 	private String linkImagem;
-	private String modelosDisponiveis;
 	ArrayList<ModelosDeCarro> listaCarros = new ArrayList<ModelosDeCarro>();
 	
 	public LocadoraVeiculos () {}
@@ -26,28 +25,38 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 		this.linkImagem = linkImagem;
 	}
 	
-	public String getModelosDisponiveis() {
-		return modelosDisponiveis;
-	}
-	public void setModelosDisponiveis(String modelosDisponiveis) {
-		this.modelosDisponiveis = modelosDisponiveis;
-	}
+	
+	
 	// (String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,int ano,String linkFoto,String tipoCambio)
 	
-	public void novoCarro(String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,int ano,String linkFoto,String tipoCambio) {
+	public void novoCarro(String nomeCarro,String marca,String modeloCarroceria, String cor,int qtPortas,String linkFoto,String tipoCambio) {
 		
-		ModelosDeCarro Carro = new ModelosDeCarro(nomeCarro,marca,modeloCarroceria,cor,qtPortas,ano,linkFoto,tipoCambio);
+		ModelosDeCarro Carro = new ModelosDeCarro(nomeCarro,marca,modeloCarroceria,cor,qtPortas,linkFoto,tipoCambio);
 		listaCarros.add(Carro);
 		
 		
 	}
 	
-	public void mostarCarros() {
+	public void modelosDisponiveis() {
+		System.out.println("Modelos disponiveis:  ");
 		for (int i= 0 ; i < listaCarros.size(); i++) {
 			ModelosDeCarro car = listaCarros.get(i);
 			System.out.println(car.getNomeCarro());
 		}
 	}
+	
+	public void printInformacoes() {
+		System.out.println("Nome da locadora:" + this.nomeLocadora);
+		System.out.println("Localização: "+this.getLocalizacao());
+		System.out.println("Como chegar: "+this.getLinkCmChegar());
+		System.out.println(this.getNotaAvaliacao()+ " Esrtrelas");
+		System.out.println("Website para contato: " + this.getLinkContato());
+		System.out.println("Telefone para contato: " +this.getTelefoneContato());
+		System.out.println("Descrição: "+this.getBreveDescricao());
+		System.out.println("Imagem: " + this.getLinkImagem());
+	}
+	
+	
 
 	
 	
