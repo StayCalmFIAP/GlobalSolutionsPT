@@ -48,7 +48,7 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 			System.out.println("Carro: " + car.getNomeCarro());
 			System.out.println("Marca " + car.getMarca());
 			System.out.println("Cor " + car.getCor());
-			System.out.println(car.getQtPortas() + "portas");
+			System.out.println(car.getQtPortas() + " portas");
 			System.out.println("Foto " + car.getLinkFoto());
 			System.out.println("Câmbio " + car.getTipoCambio());
 			System.out.println("-----------------------------");
