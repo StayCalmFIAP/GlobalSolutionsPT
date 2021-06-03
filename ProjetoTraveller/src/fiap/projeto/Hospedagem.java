@@ -10,7 +10,7 @@ public class Hospedagem extends EstabelecimentoComercial {
 	private boolean temWifi;
 	private boolean temPiscina;
 	private boolean podePet;
-	ArrayList<Quarto> listaQuartos = new ArrayList<Quarto>();
+	private ArrayList<Quarto> listaQuartos = new ArrayList<Quarto>();
 
 	public Hospedagem() {
 	}

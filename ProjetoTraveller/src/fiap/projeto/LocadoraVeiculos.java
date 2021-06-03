@@ -6,7 +6,7 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 
 	private String nomeLocadora;
 	private String linkImagem;
-	ArrayList<ModelosDeCarro> listaCarros = new ArrayList<ModelosDeCarro>();
+	private ArrayList<ModelosDeCarro> listaCarros = new ArrayList<ModelosDeCarro>();
 
 	public LocadoraVeiculos() {
 	}
