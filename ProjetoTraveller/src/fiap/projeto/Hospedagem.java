@@ -6,7 +6,6 @@ public class Hospedagem extends EstabelecimentoComercial {
 
 	private String nomeHospedagem;
 	private int numeroQuartos;
-	private int quartosDisponiveis;
 	private String linkFotos;
 	private boolean temWifi;
 	private boolean temPiscina;
@@ -32,13 +31,7 @@ public class Hospedagem extends EstabelecimentoComercial {
 		this.numeroQuartos = numeroQuartos;
 	}
 
-	public int getQuartosDisponiveis() {
-		return quartosDisponiveis;
-	}
 
-	public void setQuartosDisponiveis(int quartosDisponiveis) {
-		this.quartosDisponiveis = quartosDisponiveis;
-	}
 
 	public String getLinkFotos() {
 		return linkFotos;
