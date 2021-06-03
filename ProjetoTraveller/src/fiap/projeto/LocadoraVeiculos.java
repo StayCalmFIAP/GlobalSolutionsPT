@@ -61,7 +61,7 @@ public class LocadoraVeiculos extends EstabelecimentoComercial {
 		System.out.println("Nome da locadora:" + this.nomeLocadora);
 		System.out.println("Localização: " + this.getLocalizacao());
 		System.out.println("Como chegar: " + this.getLinkCmChegar());
-		System.out.println(this.getNotaAvaliacao() + " Esrtrelas");
+		System.out.println(this.getNotaAvaliacao() + " Estrelas");
 		System.out.println("Website para contato: " + this.getLinkContato());
 		System.out.println("Telefone para contato: " + this.getTelefoneContato());
 		System.out.println("Descrição: " + this.getBreveDescricao());
