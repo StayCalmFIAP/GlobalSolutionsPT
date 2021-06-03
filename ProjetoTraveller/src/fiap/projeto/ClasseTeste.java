@@ -57,6 +57,9 @@ public class ClasseTeste {
 				"https://myreservations.omnibees.com/Handlers/ImageLoader.ashx?sz=400x275&imageID=215250.jpg",
 				"Possui 40 m² e conta com uma cama de casal (King-Size), 1 banheiro com tamanho diferenciado, ar-condicionado com controle individual, TV a cabo, estação de trabalho, secador de cabelos, cofre digital e Wi-Fi cortesia.",
 				297, "Suite Deluxe");
+		
+		bourbon.printInformacoes();
+		bourbon.quartosDisponiveis();
 
 	}
 

@@ -82,7 +82,9 @@ public class Hospedagem extends EstabelecimentoComercial {
 			System.out.println("Descrição do quarto: " + qrta.getDescricaoCategoria());
 			System.out.println("Preço: " + qrta.getPrecoQuarto() + " R$ o dia");
 			System.out.println("Categoria: " + qrta.getCategoriaQuarto());
+			System.out.println("-----------------------------");
 		}
+		
 
 	}
 
@@ -100,6 +102,7 @@ public class Hospedagem extends EstabelecimentoComercial {
 		System.out.println("Tem WiFi: " + this.isTemWifi());
 		System.out.println("Tem pscina: " + this.isTemPiscina());
 		System.out.println("Pode pet: " + this.isPodePet());
+		System.out.println("-----------------------------");
 
 	}
 
